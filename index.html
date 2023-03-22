@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script>
+        $(document).ready(function(){
+            $("#toggle-Btn").click(function(){
+                $(".wrapper").toggleClass("collapse-sidebar");
+            });
+            // $("#nav-2 ul li a").click(function(){
+            //     $("#nav-2").toggleClass('d-none');
+            // })
+        });
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+
+
+        <div id="sidebar">
+            <div id="img-div">
+                <img src="coder-3462410-2896028.png" class="img-fluid" alt="">
+                <h4>Admin</h4>
+            </div>
+            <div id="sidebar-menu">
+                <ul>
+                    <li><a href="#"><sapn class="icon"><i class="fa-solid fa-book"></i></sapn><span class="title">Dashboard</span></a></li>
+                    <li><a href="#"><sapn class="icon"><i class="fa-solid fa-book"></i></sapn><span class="title">Home</span></a></li>
+                    <li><a href="#"><sapn class="icon"><i class="fa-solid fa-book"></i></sapn><span class="title">About</span></a></li>
+                    <li><a href="#"><sapn class="icon"><i class="fa-solid fa-book"></i></sapn><span class="title">Service</span></a></li>
+                    <li><a href="#"><sapn class="icon"><i class="fa-solid fa-book"></i></sapn><span class="title">Portfolio</span></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="main-div">
+            <div id="header">
+                <div id="main-title">
+                    <div id="toggle-div"><i class="fa-solid fa-list-ul" id="toggle-Btn"></i></div>
+                    <span class="title">Dashboard</span>
+                </div>
+                <div id="social-links">
+                    <ul>
+                        <li><a href=""><i class="fa-solid fa-bell"></i></a></li>
+                        <li><a href=""><i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="main-content">
+                <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum animi laboriosam inventore doloribus suscipit modi iste corrupti sed, adipisci tenetur nemo culpa quaerat necessitatibus! Quas repellendus, delectus tempore est earum eveniet cumque eum qui quidem veritatis nisi recusandae similique odio temporibus possimus, ab distinctio voluptatem dolores magni tenetur adipisci perspiciatis.</div>
+            </div>
+            <div id="footer">
+    
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+</body>
+</html>
